@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddMenuViewController">
+            <connections>
+                <outlet property="ItemDescription" destination="BHM-OL-MJ5" id="gyI-e4-tk2"/>
+                <outlet property="ItemName" destination="NFz-he-pEQ" id="Iq9-JJ-PBc"/>
+                <outlet property="ItemPrice" destination="zvc-Hs-JGv" id="uM5-gR-w65"/>
+                <outlet property="ItemRating" destination="jya-Ss-Rk6" id="qfk-8W-RKk"/>
+                <outlet property="MenuName" destination="BsP-pN-1hA" id="hJ1-T0-w7g"/>
+                <outlet property="view" destination="iN0-l3-epB" id="zJE-EY-6mS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NFz-he-pEQ">
+                    <rect key="frame" x="20" y="166" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Description" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BHM-OL-MJ5">
+                    <rect key="frame" x="20" y="216" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Price" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zvc-Hs-JGv">
+                    <rect key="frame" x="20" y="266" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Rating" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jya-Ss-Rk6">
+                    <rect key="frame" x="20" y="316" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Menu Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVp-KH-TbX">
+                    <rect key="frame" x="82" y="45" width="211" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="OpX-7Y-RHA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Menu Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BsP-pN-1hA">
+                    <rect key="frame" x="20" y="115" width="336" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISR-m8-mQ2">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Back" id="786-Kb-NPS">
+                            <connections>
+                                <action selector="backBtn:" destination="-1" id="r8Z-Yh-Bhb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="261" style="plain" systemItem="fixedSpace" id="zo6-3y-GJY"/>
+                        <barButtonItem title="Save" id="pJL-ya-bU0">
+                            <connections>
+                                <action selector="SaveButton:" destination="-1" id="kXO-09-jb8"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SVp-KH-TbX" firstAttribute="centerX" secondItem="BsP-pN-1hA" secondAttribute="centerX" id="09U-Ag-jAh"/>
+                <constraint firstItem="ISR-m8-mQ2" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="6Iu-ae-nCc"/>
+                <constraint firstItem="BsP-pN-1hA" firstAttribute="top" secondItem="SVp-KH-TbX" secondAttribute="bottom" constant="49" id="AL1-Lw-RFl"/>
+                <constraint firstItem="zvc-Hs-JGv" firstAttribute="trailing" secondItem="jya-Ss-Rk6" secondAttribute="trailing" id="FBw-k5-PQv"/>
+                <constraint firstItem="NFz-he-pEQ" firstAttribute="leading" secondItem="BHM-OL-MJ5" secondAttribute="leading" id="Lsa-9m-xQE"/>
+                <constraint firstItem="jya-Ss-Rk6" firstAttribute="top" secondItem="zvc-Hs-JGv" secondAttribute="bottom" constant="20" id="NTF-mP-Fg0"/>
+                <constraint firstItem="ISR-m8-mQ2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OWg-Wo-ApZ"/>
+                <constraint firstItem="zvc-Hs-JGv" firstAttribute="leading" secondItem="jya-Ss-Rk6" secondAttribute="leading" id="Q75-12-r33"/>
+                <constraint firstItem="SVp-KH-TbX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="82" id="Rl6-cc-Mfq"/>
+                <constraint firstItem="BsP-pN-1hA" firstAttribute="centerX" secondItem="NFz-he-pEQ" secondAttribute="centerX" id="UlN-Iu-kA7"/>
+                <constraint firstItem="SVp-KH-TbX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XyW-Zg-eo6"/>
+                <constraint firstItem="BsP-pN-1hA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="aZT-Lu-V3L"/>
+                <constraint firstItem="SVp-KH-TbX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="45" id="auG-7Q-rek"/>
+                <constraint firstItem="ISR-m8-mQ2" firstAttribute="centerX" secondItem="jya-Ss-Rk6" secondAttribute="centerX" id="cNP-7u-SeS"/>
+                <constraint firstItem="NFz-he-pEQ" firstAttribute="top" secondItem="BsP-pN-1hA" secondAttribute="bottom" constant="21" id="cgd-cJ-xRU"/>
+                <constraint firstItem="BHM-OL-MJ5" firstAttribute="trailing" secondItem="zvc-Hs-JGv" secondAttribute="trailing" id="fmy-NY-fLT"/>
+                <constraint firstItem="ISR-m8-mQ2" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="jso-Hq-czU"/>
+                <constraint firstItem="BsP-pN-1hA" firstAttribute="leading" secondItem="NFz-he-pEQ" secondAttribute="leading" id="pfm-fy-92i"/>
+                <constraint firstItem="BHM-OL-MJ5" firstAttribute="leading" secondItem="zvc-Hs-JGv" secondAttribute="leading" id="sJ0-vf-chz"/>
+                <constraint firstItem="BHM-OL-MJ5" firstAttribute="top" secondItem="NFz-he-pEQ" secondAttribute="bottom" constant="20" id="tza-nL-fjS"/>
+                <constraint firstItem="NFz-he-pEQ" firstAttribute="trailing" secondItem="BHM-OL-MJ5" secondAttribute="trailing" id="xbE-Gm-Dwr"/>
+                <constraint firstItem="zvc-Hs-JGv" firstAttribute="top" secondItem="BHM-OL-MJ5" secondAttribute="bottom" constant="20" id="zi6-nd-Xak"/>
+            </constraints>
+            <point key="canvasLocation" x="26" y="52"/>
+        </view>
+    </objects>
+</document>

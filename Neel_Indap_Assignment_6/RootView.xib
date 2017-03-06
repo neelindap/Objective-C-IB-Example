@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="fcE-60-DwO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Management System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-xG-JhU">
+                    <rect key="frame" x="-8" y="52.999999999999993" width="430" height="29.333333333333321"/>
+                    <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNT-fX-qH1">
+                    <rect key="frame" x="120" y="183" width="174" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="XKP-cw-t43"/>
+                    </constraints>
+                    <state key="normal" title="Add Menu Items">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addMenuBtn:" destination="-1" eventType="touchUpInside" id="25T-Vw-m8H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sma-VR-pFa">
+                    <rect key="frame" x="120" y="231" width="174" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="List Menu Items">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="listMenuBtn:" destination="-1" eventType="touchUpInside" id="StP-D2-YLX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFN-49-0xI">
+                    <rect key="frame" x="120" y="279" width="174" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Search Menu Items">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="searchMenuBtn:" destination="-1" eventType="touchUpInside" id="mLC-aB-aw5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2h6-oL-2V1"/>
+                <constraint firstItem="GNT-fX-qH1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="183" id="5CA-Ah-Inn"/>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="top" secondItem="GNT-fX-qH1" secondAttribute="bottom" constant="18" id="6eM-Oh-Dgb"/>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="top" secondItem="GNT-fX-qH1" secondAttribute="bottom" constant="18" id="8II-u7-oO8"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="width" secondItem="GNT-fX-qH1" secondAttribute="width" id="Bc0-He-VGV"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="top" secondItem="sma-VR-pFa" secondAttribute="bottom" constant="18" id="CST-LP-LFn"/>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="width" secondItem="GNT-fX-qH1" secondAttribute="width" id="Ckf-ec-HAE"/>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GWP-Z2-mDW"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="top" secondItem="sma-VR-pFa" secondAttribute="bottom" constant="18" id="Jwy-SP-hbV"/>
+                <constraint firstItem="GNT-fX-qH1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PGb-GO-Jew"/>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q16-0A-5ja"/>
+                <constraint firstItem="sma-VR-pFa" firstAttribute="height" secondItem="GNT-fX-qH1" secondAttribute="height" id="Tlc-Rc-Ty9"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Ap0-xG-JhU" secondAttribute="trailing" constant="-16" id="ap3-ib-6dw"/>
+                <constraint firstItem="Ap0-xG-JhU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="-16" id="fG6-3R-t7D"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="height" secondItem="GNT-fX-qH1" secondAttribute="height" id="iLC-u0-XVV"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qAW-C8-Baw"/>
+                <constraint firstItem="Ap0-xG-JhU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="45" id="tgi-g4-5tM"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uYq-cd-2hI"/>
+                <constraint firstItem="GNT-fX-qH1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="unm-y3-5tO"/>
+                <constraint firstItem="GNT-fX-qH1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yWU-pz-LVK"/>
+                <constraint firstItem="NFN-49-0xI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zlK-ps-LK7"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="55.5"/>
+        </view>
+    </objects>
+</document>
